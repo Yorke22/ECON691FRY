@@ -36,7 +36,8 @@ core <- acs %>%
               names_from = "variable",
               values_from = "estimate") %>%
   mutate (med_inc2 = Med_Inc/12,
-          Afford = Med_Rent/med_inc2)
+          Afford = Med_Rent/med_inc2) #This should be the "share" variable
+          # Affordability = .33 - Share
 
 #Tables and Graphs
 
