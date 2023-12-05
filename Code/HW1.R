@@ -48,9 +48,13 @@ summary(core)
 
 #Map 1 
 ggplot(core) + 
-  geom_sf(aes(fill=Afford) + 
-  scale_fill_gradient2()+
-  theme_bw())
+#  geom_sf(aes(fill=Afford) +  #Your error here is that you forgot a para ")" at the end of this line
+  geom_sf(aes(fill=Afford))+
+   scale_fill_gradient2()+
+  #theme_bw())                 #By placing the ")" here, all this is under the geom_sf() command and thus ignored
+  theme_bw()
+
+
 
 #Map 2 
 ggplot(core) + 
