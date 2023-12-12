@@ -104,7 +104,7 @@ summary(mod2b)
 
 #PART 4
 # Displaying Result in Html Format
-stargazer(mod1, type = "html",out = "./Analysis.html")
+stargazer(mod1, type = "html",out = "./Analysis.html")  #The problem here is that you keep overwritting the file rather than saving different versions
 stargazer(mod2, type = "html",out = "./Analysis.html")
 stargazer(mod1a,type = "html",out = "./Analysis.html")
 stargazer(mod2a,type = "html",out = "./Analysis.html")
